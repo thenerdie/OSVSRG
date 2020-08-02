@@ -6,6 +6,14 @@ function two:new(x, y)
         y = y or 0;
     }
 
+    function self:incx(x)
+        self.x = self.x + x;
+    end
+
+    function self:incy(y)
+        self.y = self.y + y;
+    end
+
     function self:setx(x)
         self.x = x
     end
