@@ -1,6 +1,6 @@
 [submodule "OS2D/SUIT"]
 	path = OS2D/SUIT
-	url = https://github.com/vrld/SUIT
+	url = https://github.com/thenerdie/suit
 [submodule "OS2D/PUSH"]
 	path = OS2D/PUSH
-	url = https://github.com/Ulydev/push
+	url = https://github.com/thenerdie/push

@@ -10,8 +10,8 @@ function mainmenu:load()
 end
 
 function mainmenu:update()
-    suit.layout:reset(100,100)
-    
+    suit.layout:reset(0,0)
+
 	suit.Input(input, suit.layout:row(200,30))
 
 	suit.Label("Hello, "..input.text, {align = "left"}, suit.layout:row())

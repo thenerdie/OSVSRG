@@ -1,6 +1,11 @@
 local app = require("OS2D.application")
 local drawing = require("OS2D.drawing")
-local image = drawing.image
+local push = require("OS2D.PUSH.push")
+
+local gameWidth, gameHeight = 1080, 720 --fixed game resolution
+local windowWidth, windowHeight = love.window.getDesktopDimensions()
+
+push:setupScreen(gameWidth, gameHeight, windowWidth, windowHeight, {fullscreen = true})
 
 local screenmanager = require("OS2D.screens.screenmanager")
 
@@ -17,10 +22,9 @@ function love.directorydropped(...)
     screenmanager:directorydropped(...)
 end
 function love.draw(...)
-    --[[local x, y = love.graphics.getDimensions()
-    local baseres = {x=1980, y=1080}
-    love.graphics.scale(x/baseres.x, y/baseres.y)]]--
+    push:start()
     screenmanager:draw(...)
+    push:finish()
 end
 function love.filedropped(...)
     screenmanager:filedropped(...)
