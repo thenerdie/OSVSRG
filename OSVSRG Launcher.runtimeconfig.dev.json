@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\kisperal\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kisperal\\.nuget\\packages"
+    ]
+  }
+}
